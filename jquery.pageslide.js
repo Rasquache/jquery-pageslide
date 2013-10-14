@@ -47,7 +47,7 @@
                 
                 $pageslide.html( iframe );
             } else {
-                $pageslide.load( url );
+                $pageslide.on("load", function( url ) { });
             }
             
             $pageslide.data( 'localEl', false );
